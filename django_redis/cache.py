@@ -183,3 +183,40 @@ class RedisCache(BaseCache):
     @omit_exception
     def touch(self, *args, **kwargs):
         return self.client.touch(*args, **kwargs)
+
+    @omit_exception
+    def execute_command(self, *args, **kwargs):
+        return self.client.execute_command(*args, **kwargs)
+
+    @omit_exception
+    def list_pop(self, *args, **kwargs):
+        return self.client.list_pop(*args, **kwargs)
+
+    @omit_exception
+    def list_push(self, *args, **kwargs):
+        return self.client.list_push(*args, **kwargs)
+
+    @omit_exception
+    def list_range(self, *args, **kwargs):
+        return self.client.list_range(*args, **kwargs)
+
+    @omit_exception
+    def list_index(self, *args, **kwargs):
+        return self.client.list_index(*args, **kwargs)
+
+    @omit_exception
+    def set_add(self, *args, **kwargs):
+        return self.client.set_add(*args, **kwargs)
+
+    @omit_exception
+    def set_count(self, *args, **kwargs):
+        return self.client.set_count(*args, **kwargs)
+
+    @omit_exception
+    def set_remove(self, *args, **kwargs):
+        return self.client.set_remove(*args, **kwargs)
+
+    @omit_exception
+    def rename(self, *args, **kwargs):
+        return self.client.rename(*args, **kwargs)
+
